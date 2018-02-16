@@ -1,0 +1,72 @@
+section.strict__top
+	div.strict
+		article.strict__title
+			|STRICT
+		article.strict__line
+		article.strict__text
+			|STRICT is a responsive theme with a a clean and minimal look.
+		article.strict__btn
+			a(class='btn' href='#') Call to action
+		article.strict__down
+			a(href="#down" class="down")
+				i.fa.fa-angle-down
+
+section.simple#down
+	div.container
+		article.simple__title
+			|Simple & pure design.
+		article.simple__text
+			|Designers everywhere gush with admiration upon seeing a web design and exclaim "its beautiful, it's so clean!". There are a countless number of webdesign round-ups dedicated to 'clean' design and it is a term thrown around quite a bit in the web design community. It can be easy to spot a good example of clean design.
+
+section.icons__top
+	div.container
+		div.icons
+			div.icons__img
+				img(src="img/icon1.png", alt="ico1").ico__img
+			div.icons__title
+				|Optimized for all devices
+			div.icons__text
+				|STRICT has been designed to be fully responsive on all devices
+		div.icons
+			div.icons__img
+				img(src="img/icon2.png", alt="ico2").ico__img
+			div.icons__title
+				|Clean & Minimal Design
+			div.icons__text
+				|This multipurpose theme is especially created to be used for different projects.
+		div.icons
+			div.icons__img
+				img(src="img/icon3.png", alt="ico3").ico__img
+			div.icons__title
+				|Font Awesome Icon
+			div.icons__text
+				|This multipurpose theme is especially created to be used for different projects.
+
+section.showCase__top
+	div.container
+		div.showCase
+			div.showCase__title
+				|Showcase your work like a pro.
+			div.showCase__text
+				|Contact me if you like my work
+			block content
+				+getImg(6)
+
+
+section.stay__top
+	div.stay__back
+		div.stay
+			article.stay__title
+				|Stay with us
+			article.stay__text
+				|We ensure quailty & support
+			article.stay__form
+				input(class='stay__input' type='text' placeholder='Full Name')
+				input(class='stay__input' type='email' placeholder='Email Address')
+				textarea(name="comment" rows="8" class="stay__input" placeholder="Message")
+				div.stay__sumbit
+					div.stay__checkbox
+						input(class='stay__check' id='check' type='checkbox')
+						label(for='check' class="stay__label") Subscribe Newsletter
+					div.stay__btn
+						a(class='stay__href' href='#') Send

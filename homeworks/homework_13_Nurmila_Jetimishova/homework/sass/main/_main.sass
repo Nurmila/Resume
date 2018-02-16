@@ -1,0 +1,27 @@
+$main_width: 1130px
+$white: #fff
+$color_title: #2d3950
+$color_text: #999999
+$latoReg: 'latoregular', sans-serif
+$latoBold: 'latobold', sans-serif
+@font-face
+	font-family: 'latoregular'
+	src: url('../fonts/lato-regular.woff2') format('woff2'), url('../fonts/lato-regular.woff') format('woff')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'latobold'
+	src: url('../fonts/lato-bold.woff2') format('woff2'), url('../fonts/lato-bold.woff') format('woff')
+	font-weight: normal
+	font-style: normal
+
+body
+	width: 100%
+	padding: 0
+	margin: 0
+	font-family: $latoReg
+
+.container
+	+center(rem(1130px))
+	padding: 0 rem(15px)

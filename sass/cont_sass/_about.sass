@@ -1,0 +1,100 @@
+.about
+	padding: rem(100px) 0
+	+column(12/12)
+
+	&__head
+		text-align: center
+
+	&__title
+		+text__title($roboto_bold, rem(35px), $color)
+		margin-bottom: rem(10px)
+		text-transform: uppercase
+		text-shadow: 6px 4px 3px #666
+
+	&__line
+		+text__line(5%)
+		border-bottom: 1px solid $color
+		margin-bottom: rem(30px)
+
+	&__little
+		+column(6/12)
+
+	&__skills
+		+column(6/12)
+
+.little__title
+	+text__title($roboto_bold, rem(24px), $color)
+	margin-bottom: rem(5px)
+	text-transform: uppercase
+	text-shadow: 3px 2px 1px #666
+
+.little__line
+	+text__line(5%)
+	margin-bottom: rem(30px)
+
+.little__text
+	+text__title($raleway_reg, rem(14px), #000)
+	margin-bottom: rem(30px)
+	line-height: 1.714
+
+.little__down
+	display: inline-block
+	padding: rem(10px)
+	background: $color
+	margin-right: rem(1px)
+	text-decoration: none
+	color: #fff
+	font-family: $roboto_bold
+	font-size: rem(14px)
+
+.little__btn
+	display: inline-block
+	padding: rem(10px)
+	background: $color
+	text-decoration: none
+	color: #fff
+	font-family: $roboto_bold
+	font-size: rem(14px)
+
+.skills__line
+	+text__line(5%)
+	margin-bottom: rem(30px)
+
+.skills__out
+	width: 100%
+	margin: rem(20px) 0
+	padding: 0
+	background: #bababa
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.skills__in
+	margin: 0
+	position: relative
+	z-index: 2
+	padding: rem(2px) 0
+	background: $color
+
+.skills__title
+	+text__title($roboto_bold, rem(24px), $color)
+	margin-bottom: rem(5px)
+	text-transform: uppercase
+	text-shadow: 3px 2px 1px #666
+
+.skills__text
+	+text__title($raleway_reg, rem(14px), #000)
+
+.skills__kv
+	position: absolute
+	left: 94%
+	top: -25px
+	margin: 0
+	padding: rem(5px)
+	background: $color
+	z-index: 2
+	font-family: $raleway_reg
+	color: #fff
+

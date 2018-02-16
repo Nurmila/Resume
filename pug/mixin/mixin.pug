@@ -1,0 +1,21 @@
+mixin getIcons(className, icons)
+	each icon in icons
+		div(class=className + "__icon " + icon)
+			a(href="#" class=className + "__link")
+				i(class="fa fa-"+icon)
+
+mixin getImg(itr)
+	div.showCase__img__top
+		- var i = 1
+		-for(i; i <= itr; i++)
+			div.showCase__img
+				div.showCase__out
+					img(src="img/foto"+i+".png", alt="foto").foto__img
+					div.showCase__hover
+						div.hover__icons
+							div.iconka
+								a(href='#')
+									i.fa.fa-search-plus.fa__size
+							div.iconka
+								a(href='#')
+									i.fa.fa-link.fa__size

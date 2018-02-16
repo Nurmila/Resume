@@ -1,0 +1,55 @@
+@function rem($px)
+	$result: $px / 16px + 0rem
+
+	@return $result
+
+=bakcground-img ($image)
+		background-image: url($image)
+		background-repeat: no-repeat
+		background-size: cover
+		background-attachment: fixed
+		z-index: -2
+
+=bakcground-fon ($value)
+		background: rgba(32, 32, 32, 0.871)
+		padding: $value 0
+		z-index: 1
+
+
+=text__title ($font, $size, $color)
+		font-family: $font
+		font-size: $size
+		color: $color
+
+=text__line ($width)
+		border-bottom: 1px solid $color
+		display: inline-block
+		width: $width
+
+=icons ()
+		display: inline-block
+		width: rem(80px)
+		height: rem(80px)
+		text-decoration: none
+		color: #fff
+		padding: rem(20px) 0
+		box-sizing: border-box
+		background: $color
+		border-radius: 15px 0px
+		font-size: rem(35px)
+
+=adap1
+	@media screen and (max-width: 480px)
+		@content
+
+=adap2
+	@media screen and (max-width: 768px)
+		@content
+
+=adap3
+	@media screen and (max-width: 992px)
+		@content
+
+=adap4
+	@media screen and (max-width: 1200px)
+		@content

@@ -1,0 +1,68 @@
+.clients
+	+column(12/12)
+	text-align: center
+	padding: rem(100px) 0
+
+	&__img
+		+column(2/12)
+		width: rem(130px)
+		height: rem(140px)
+		overflaw: hidden
+
+	&__title
+		+text__title($roboto_reg, rem(35px), $color)
+		text-transform: uppercase
+		text-shadow: 6px 4px 3px #666
+
+	&__line
+		display: inline-block
+		width: 10%
+		margin: rem(20px) 0
+		border-bottom: 1px solid $color
+
+	&__text
+		+column(8/12)
+		+text__title($raleway_reg, rem(14px), #000)
+		line-height: 1.857
+		text-align: left
+
+	&__info1
+		text-align: right
+		font-family: $raleway_bold
+		font-size: rem(14px)
+		font-weight: bold
+		padding: 0
+		margin: 0
+
+	&__info2
+		text-align: right
+		font-family: $raleway_reg
+		font-size: rem(14px)
+		padding: 0
+		margin: 0
+
+.item
+	+column(12/12)
+	box-sizing: border-box
+	background: #f9f9f9
+	border: 1px solid #eeeeee
+	padding: rem(50px) rem(20px)
+	margin: 0 rem(15px)
+
+.prev__btn
+	margin-top: rem(50px)
+	border-radius: 15px 0px
+	display: inline-block
+	border: 2px solid $color
+
+.next
+	font-size: rem(14px)
+	padding: rem(10px) rem(15px)
+	font-size: rem(14px)
+	color: #444
+
+.prev
+	font-size: rem(14px)
+	padding: rem(10px) rem(15px)
+	font-size: rem(14px)
+	color: #444

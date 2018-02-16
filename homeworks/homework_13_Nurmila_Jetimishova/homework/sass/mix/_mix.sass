@@ -1,0 +1,23 @@
+@function rem($px)
+	$result: $px / 16px + 0rem
+
+	@return $result
+
+=trs ($value)
+		background: $value
+
+=adap1
+	@media screen and (max-width: 480px)
+		@content
+
+=adap2
+	@media screen and (max-width: 768px)
+		@content
+
+=adap3
+	@media screen and (max-width: 992px)
+		@content
+
+=adap4
+	@media screen and (max-width: 1200px)
+		@content

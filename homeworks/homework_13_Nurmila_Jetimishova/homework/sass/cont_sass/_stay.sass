@@ -1,0 +1,59 @@
+.stay__top
+	+column(12/12)
+	background-image: url(../img/back2.png)
+	background-repeat: no-repeat
+	max-width: 100%
+	background-position: center center
+	background-size: 100% 100%
+	margin-bottom: rem(30px)
+
+.stay__back
+	+column(12/12)
+	background: rgba(45, 57, 80, 0.7)
+	padding: rem(75px) 0
+	height: 100%
+
+.stay
+	+column(4/12)
+	+move(4/12)
+	z-index: 3
+
+	&__title
+		text-align: center
+		color:  $white
+		font-size: rem(41px)
+
+	&__text
+		text-align: center
+		color: #999999
+		font-size: rem(15px)
+		padding: rem(20px) 0 rem(50px) 0
+
+	&__input
+		background: none
+		+column(11/12)
+		border-radius: 3px
+		margin-bottom: rem(25px)
+		padding: rem(20px)
+
+	&__input:hover
+		color: #fff
+		border-color: $white
+
+	&__sumbit
+		+column(12/12)
+		margin-top: rem(15px)
+
+	&__checkbox
+		+column(6/12)
+
+	&__label
+		color: $white
+
+	&__btn
+		+column(6/12)
+		text-align: right
+
+.stay__href
+	@extend .btn
+	padding: rem(15px) rem(50px)

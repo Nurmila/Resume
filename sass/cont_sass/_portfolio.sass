@@ -1,0 +1,79 @@
+.portfolio
+	+column(12/12)
+	padding: rem(100px) 0
+	text-align: center
+
+	&__title
+		+text__title($roboto_bold, rem(35px), $color)
+		margin-top: rem(40px)
+		text-transform: uppercase
+		text-shadow: 6px 4px 3px #666
+
+	&__text
+		+text__title($raleway_reg, rem(15px), #000)
+		margin-top: rem(30px)
+		line-height: 1.714
+
+	&__line
+		display: inline-block
+		width: 10%
+		margin: rem(20px) 0
+		border-bottom: 1px solid $color
+
+	&__btn
+		display: inline-block
+		text-decoration: none
+		color: #000
+		padding: rem(5px) rem(20px)
+		background: #fff
+		border-radius: 10px 0px
+		font-size: rem(14px)
+		margin: rem(10px) 0
+		font-family: $raleway_bold
+
+	&__btn:hover
+		color: #fff
+		background: $color
+
+	&__href
+		display: inline-block
+		text-decoration: none
+		color: #fff
+		padding: rem(10px) rem(20px)
+		background: $color
+		border-radius: 10px 0px
+		font-size: rem(12px)
+		margin: rem(10px) 0
+		font-family: $raleway_bold
+		margin: rem(20px) rem(10px)
+		text-transform: uppercase
+
+	&__icon
+		display: inline-block
+		margin-top: 5px
+		box-sizing: border-box
+		font-size: rem(22px)
+		margin-right: rem(5px)
+
+	// &__hover
+	// 	position: absolute
+	// 	width: 100%
+	// 	height: 94%
+	// 	filter: alpha(Opacity=0.0)
+	// 	opacity: 0.0
+	// 	background: rgba(0, 0, 0, 0.549)
+	// 	top: 0px
+	// 	left: 0px
+	// 	padding: rem(15px)
+	// 	box-sizing: border-box
+
+	// &__tile:hover .portfolio__hover
+	// 	@extend .portfolio__hover
+	// 	filter: alpha(Opacity=0.90)
+	// 	opacity: 0.90
+
+	// &__rect
+	// 	z-index: 5
+	// 	border: 1px solid #ffae00
+	// 	width: 100%
+	// 	height: 100%

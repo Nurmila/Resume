@@ -1,0 +1,86 @@
+.touch
+	+column(12/12)
+	background-image: url(../img/foto5.png)
+	background-repeat: no-repeat
+	background-size: cover
+	text-align: center
+	background-attachment: fixed
+
+	&__fon
+		background: rgba(32, 32, 32, 0.871)
+		padding: rem(50px) 0
+
+	&__out
+		z-index: 2
+
+	&__title
+		margin-top: rem(40px)
+		color: $color
+		font-size: rem(35px)
+		font-family: $roboto_reg
+		text-transform: uppercase
+
+	&__line
+		display: inline-block
+		width: 10%
+		margin: rem(20px) 0
+		border-bottom: 1px solid $color
+
+	&__form
+		+column(12/12)
+
+	&__one
+		+column(6/12)
+		text-align: left
+
+	&__two
+		+column(6/12)
+		text-align: left
+
+	&__link
+		+column(2/12, $gutter: 0)
+		background: $color
+		text-align: center
+		box-sizing: border-box
+		padding: rem(15px)
+		font-size: rem(24px)
+		color: #fff
+
+	&__input
+		+column(8/12, $gutter: 0)
+		background: none
+		margin: 0
+		margin-bottom: rem(20px)
+		padding: rem(20px)
+		border: 1px solid #fff
+		border-left: none
+		color: #fff
+
+	&__input__area
+		+column(12/12, $gutter: 0)
+		background: none
+		margin: 0
+		margin-bottom: rem(20px)
+		padding: rem(20px)
+		border: 1px solid #fff
+		box-sizing: border-box
+		resize: none
+		color: #fff
+
+	&__input:hover
+		color: #fff
+		border-color: #fff
+
+	&__btn
+		+column(6/12)
+		text-align: right
+
+	&__href
+		width: 100%
+		font-family: $raleway_bold
+		font-size: rem(24px)
+		color: #fff
+		background: $color
+		border: none
+		padding: rem(15px)
+		text-transform: uppercase

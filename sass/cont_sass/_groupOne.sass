@@ -1,0 +1,26 @@
+.groupOne
+	+column(12/12)
+	+bakcground-img("../img/foto2.png")
+	text-align: center
+
+	&__fon
+		+bakcground-fon(rem(100px))
+
+	&__icons
+		z-index: 2
+		+column(4/12,$cycle: 3)
+		text-align: center
+
+
+	&__link
+		+icons()
+
+	&__title
+		+text__title($raleway_reg, rem(24px), #fff)
+		margin-top: rem(40px)
+		text-transform: uppercase
+
+	&__text
+		+text__title($raleway_reg, rem(14px), #fff)
+		margin-top: rem(30px)
+		line-height: 1.714
